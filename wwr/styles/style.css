@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Roboto&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 .home-title {
     color: #098DC8ff;
+    font-family: "Radio Canada";
+    font-size: 2em;
+    margin-top: 10px;
 }
 body {
     background-color: white;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #098DC8ff;
 }
 .logo {
     width: 110px;
+}
+h2 {
+    margin: 0;
 }
 h4 {
     color: black;
@@ -21,6 +33,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #FE8F21ff;
@@ -30,10 +43,14 @@ nav a:hover {
     background-color: #098DC8ff;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
 }
 .book:hover, .join:hover {
     background-color: #FE8F21ff;
     color: white;
+    border-radius: 5px;
 }
 #hero-img {
     width: 100%;
@@ -46,15 +63,29 @@ nav a:hover {
 }
 .msg {
     background-color: #98ECFFff;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
-    color: black
+    color: black;
+    font-family: "Radio Canada";
 }
 .msg p {
     color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 main section {
     text-align: center;
+}
+main section img {
+    box-sizing: border-box;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #98ECFFff;
 }
 #background {
     height: 725px;
@@ -62,6 +93,8 @@ main section {
 }
 footer {
     background-color: #098DC8ff;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer h3 {
     color: white;
@@ -76,6 +109,13 @@ footer a {
 footer a:hover {
     color: white;
 }
+footer .social img {
+    padding-top: 15px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+#logo_link {
+    padding-top: 5px;
 }
