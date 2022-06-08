@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada&family=Roboto&display=swap');
 
+/* Home */
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -181,6 +182,53 @@ footer .social img {
     justify-self: center;
     align-self: center;
 }
+
+/* FAQ */
+#faqhero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#faqhero-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+#faqhero-msg {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+#faqhero-img {
+    width: 100%;
+}
+#faq-title {
+    color: #098DC8ff;
+    font-family: "Radio Canada";
+    font-size: 2em;
+}
+#faqheading {
+    display: block;
+    text-align: center;
+    background-color: #98ECFFff;
+    padding: 30px;
+    margin-top: -6px;
+}
+#questions {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+.q {
+    margin: auto auto;
+    text-align: left;
+}
+.p {
+    margin: auto auto;
+}
+.p img{
+    max-width: 100%;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
