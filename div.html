@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+        <script>
+            var x = document.querySelector(":root");
+            function myFunction() {
+                    x.style.setProperty("--div", "block");
+                    x.style.setProperty("--div2", "none");
+                    x.style.setProperty("--div3", "none");
+                }
+            function myFunction2() {
+                var xc = getComputedStyle(x);
+                x.style.setProperty("--div", "none");
+                    x.style.setProperty("--div2", "block");
+                    x.style.setProperty("--div3", "none");
+            }
+            function myFunction3() {
+                var xc = getComputedStyle(x);
+                x.style.setProperty("--div", "none");
+                    x.style.setProperty("--div2", "none");
+                    x.style.setProperty("--div3", "block");
+            }
+        </script>
+    <link rel="stylesheet" href="div.css">
+</head>
+
+<body>
+
+    <p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+    <button onclick="myFunction()">Try it</button>
+    <button onclick="myFunction2()">Try it</button>
+    <button onclick="myFunction3()">Try it</button>
+
+    <div id="myDIV">
+        This is my DIV1 element.
+    </div>
+    <div id="myDIV2">
+        This is my DIV2 element.
+    </div>
+    <div id="myDIV3">
+        This is my DIV3 element.
+    </div>
+
+    <p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+
+
+</body>
+
+</html>
