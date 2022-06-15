@@ -57,6 +57,7 @@ nav a:hover {
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #FE8F21ff;
@@ -159,6 +160,7 @@ footer {
 }
 footer h3 {
     color: white;
+    font-size: 0.8em;
 }
 footer h3 a:hover {
     text-decoration: underline;
@@ -216,11 +218,19 @@ footer .social img {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
+    row-gap: 100px;
 }
 .q {
     margin: auto auto;
     text-align: left;
+    padding-right: 25px;
+    margin-left: 25px;
+}
+.question {
+    font-size: 1.3em;
+}
+strong {
+    color: #FE8F21ff;
 }
 .p {
     margin: auto auto;
