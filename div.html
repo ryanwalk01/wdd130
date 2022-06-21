@@ -15,21 +15,19 @@
         <script>
             var x = document.querySelector(":root");
             function myFunction() {
-                    x.style.setProperty("--div", "block");
-                    x.style.setProperty("--div2", "none");
-                    x.style.setProperty("--div3", "none");
+                x.style.setProperty("--div", "block");
+                x.style.setProperty("--div2", "none");
+                x.style.setProperty("--div3", "none");
                 }
             function myFunction2() {
-                var xc = getComputedStyle(x);
                 x.style.setProperty("--div", "none");
-                    x.style.setProperty("--div2", "block");
-                    x.style.setProperty("--div3", "none");
+                x.style.setProperty("--div2", "block");
+                x.style.setProperty("--div3", "none");
             }
             function myFunction3() {
-                var xc = getComputedStyle(x);
                 x.style.setProperty("--div", "none");
-                    x.style.setProperty("--div2", "none");
-                    x.style.setProperty("--div3", "block");
+                x.style.setProperty("--div2", "none");
+                x.style.setProperty("--div3", "block");
             }
         </script>
     <link rel="stylesheet" href="div.css">

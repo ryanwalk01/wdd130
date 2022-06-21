@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Walker | Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        var x = document.querySelector(":root");
+        function wv() {
+            x.style.setProperty("--wv", "block");
+            x.style.setProperty("--ny", "none");
+            x.style.setProperty("--ut", "none");
+            x.style.setProperty("--be", "none");
+            x.style.setProperty("--misc", "none");
+            }
+        function ny() {
+            x.style.setProperty("--wv", "none");
+            x.style.setProperty("--ny", "block");
+            x.style.setProperty("--ut", "none");
+            x.style.setProperty("--be", "none");
+            x.style.setProperty("--misc", "none");
+        }
+        function ut() {
+            x.style.setProperty("--wv", "none");
+            x.style.setProperty("--ny", "none");
+            x.style.setProperty("--ut", "block");
+            x.style.setProperty("--be", "none");
+            x.style.setProperty("--misc", "none");
+        }
+        function be() {
+            x.style.setProperty("--wv", "none");
+            x.style.setProperty("--ny", "none");
+            x.style.setProperty("--ut", "none");
+            x.style.setProperty("--be", "block");
+            x.style.setProperty("--misc", "none");
+        }
+        function misc() {
+            x.style.setProperty("--wv", "none");
+            x.style.setProperty("--ny", "none");
+            x.style.setProperty("--ut", "none");
+            x.style.setProperty("--be", "none");
+            x.style.setProperty("--misc", "block");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo_link">
+            <img class="logo" src="images/noback.png" alt="World Walker Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
+    </header>
+    <main>
+        <div class="head">
+            <h1>My Work</h1>
+            <p>I have taken pictures at many locations across the United States. In the state of New York, I have photographed New York City and Niagara Falls. I also have taken plenty of pictures on the beaches of Virginia. I have taken pictures in Florida, the sunshine state, including beaches and grand resorts. I have captured many of the spectacular hills of West Virginia. Finally, I have taken photographs of several places in Utah, where I served a mission for the Church of Jesus Christ of Latter-Day Saints. These locations include, Provo, Price, Heber City, and Vernal. I have future plans to travel to even more locations around the world to continue to capture our magnificent earth.<br>With all that out of the way, enjoy the wonderful pictures of earth's beauty.</p>
+        </div>
+        <div class="cats">
+            <button onclick="wv()">West Virginia</button>
+            <button onclick="ny()">New York</button>
+            <button onclick="ut()">Utah</button>
+            <button onclick="be()">Beaches</button>
+            <button onclick="misc()">Miscellaneous</button>
+        </div>
+        <section id="pics">
+            <div id="wv">
+                <p>Pictures of my wild and wonderful home state. Country roads, take me home.</p>
+                <img src="images/w1.jpg">
+                <img src="images/w2.jpg">
+                <img src="images/w3.jpg">
+                <img src="images/w4.jpg">
+                <img src="images/w5.jpg">
+                <img src="images/w6.jpg">
+                <img src="images/w7.jpg">
+                <img src="images/w8.jpg">
+                <img src="images/w9.jpg">
+            </div>
+            <div id="ny">
+                <p>Here's some pictures of stunning city skylines and rushing waterfalls of New York.</p>
+                <img src="images/n1.jpg">
+                <img src="images/n2.jpg">
+                <img src="images/n3.jpg">
+                <img src="images/n4.jpg">
+                <img src="images/n5.jpg">
+                <img src="images/n6.jpg">
+                <img src="images/n7.jpg">
+                <img src="images/n8.jpg">
+                <img src="images/n9.jpg">
+            </div>
+            <div id="ut">
+                <p>Take a look at some dry deserts and enormous mountains.</p>
+                <img src="images/u1.jpg">
+                <img src="images/u2.jpg">
+                <img src="images/u3.jpg">
+                <img src="images/u4.jpg">
+                <img src="images/u5.jpg">
+                <img src="images/u6.jpg">
+                <img src="images/u7.jpg">
+                <img src="images/u8.jpg">
+                <img src="images/u9.jpg">
+            </div>
+            <div id="be">
+                <p>Feast your eyes on the sunny beaches of Virginia and Florida.</p>
+                <img src="images/b1.jpg">
+                <img src="images/b2.jpg">
+                <img src="images/b3.jpg">
+                <img src="images/b4.jpg">
+                <img src="images/b5.jpg">
+                <img src="images/b6.jpg">
+                <img src="images/b7.jpg">
+                <img src="images/b8.jpg">
+                <img src="images/b9.jpg">
+            </div>
+            <div id="misc">
+                <p>Enjoy more various images I have taken.</p>
+                <img src="images/m1.jpg">
+                <img src="images/m2.jpg">
+                <img src="images/m3.jpg">
+                <img src="images/m4.jpg">
+                <img src="images/m5.jpg">
+                <img src="images/m6.jpg">
+                <img src="images/m7.jpg">
+                <img src="images/m8.jpg">
+                <img src="images/m9.jpg">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>World Walker &copy; 2022 - Ryan Walker</h3>
+        <h3><a href="site-plan.html">Site Plan</a></h3>
+        <h3><a href="aboutme.html">Contact Me</a></h3>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

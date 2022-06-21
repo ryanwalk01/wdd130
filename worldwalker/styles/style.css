@@ -1,0 +1,27 @@
+:root {
+    --wv: none;
+    --ny: none;
+    --ut: none;
+    --be: none;
+    --misc: none;
+}
+body {
+    background-color: #fad994;
+}
+
+/* portfolio.html */
+#wv {
+    display: var(--wv)
+}
+#ny {
+    display: var(--ny)
+}
+#ut {
+    display: var(--ut)
+}
+#be {
+    display: var(--be)
+}
+#misc {
+    display: var(--misc)
+}
