@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Orbitron&display=swap');
+
 :root {
     --wv: none;
     --ny: none;
@@ -5,8 +7,116 @@
     --be: none;
     --misc: none;
 }
+/* Home */
 body {
     background-color: #fad994;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: -8px;
+    font-family: 'Orbitron', sans-serif;
+}
+nav {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+#logo {
+    grid-row: 2;
+    margin-left: 10%;
+}
+nav img {
+    width: 80%;
+}
+ul {
+    all: unset;
+}
+#navlist {
+    grid-row: 3;
+    text-align: center;
+    display: grid;
+    grid-row-gap: 50px;
+}
+#navlist a {
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-inline: 40px;
+    padding: 10px;
+    transition: 0.3s;
+}
+#navlist a:hover {
+    color: #c6464f;
+}
+#hero {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero img {
+    width: 100%;
+}
+main {
+    text-align: center;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#seeimg {
+    align-self: center;
+}
+#seeimg img{
+    width: 100%;
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+p {
+    font-size: 30px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 100;
+}
+.help {
+    grid-column: 1/-1;
+}
+footer {
+    background-color: #ee8968;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: -8px;
+}
+footer h2 {
+    color: black;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: #302f4e;
+    font-weight: bold;
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 /* portfolio.html */
