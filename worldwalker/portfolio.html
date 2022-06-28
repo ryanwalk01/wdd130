@@ -6,73 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Walker | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/fav.png">
     <link rel="stylesheet" href="styles/style.css">
     <script>
-        var x = document.querySelector(":root");
-        function wv() {
-            x.style.setProperty("--wv", "block");
-            x.style.setProperty("--ny", "none");
-            x.style.setProperty("--ut", "none");
-            x.style.setProperty("--be", "none");
-            x.style.setProperty("--misc", "none");
-            }
-        function ny() {
-            x.style.setProperty("--wv", "none");
-            x.style.setProperty("--ny", "block");
-            x.style.setProperty("--ut", "none");
-            x.style.setProperty("--be", "none");
-            x.style.setProperty("--misc", "none");
+        function openPort(evt, portName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
         }
-        function ut() {
-            x.style.setProperty("--wv", "none");
-            x.style.setProperty("--ny", "none");
-            x.style.setProperty("--ut", "block");
-            x.style.setProperty("--be", "none");
-            x.style.setProperty("--misc", "none");
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        function be() {
-            x.style.setProperty("--wv", "none");
-            x.style.setProperty("--ny", "none");
-            x.style.setProperty("--ut", "none");
-            x.style.setProperty("--be", "block");
-            x.style.setProperty("--misc", "none");
-        }
-        function misc() {
-            x.style.setProperty("--wv", "none");
-            x.style.setProperty("--ny", "none");
-            x.style.setProperty("--ut", "none");
-            x.style.setProperty("--be", "none");
-            x.style.setProperty("--misc", "block");
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(portName).style.display = "grid";
+        portName += "d"
+        document.getElementById(portName).style.display = "block";
+        evt.currentTarget.className += " active";
         }
     </script>
 </head>
 
 <body>
     <header>
-        <a href="index.html" id="logo_link">
-            <img class="logo" src="images/noback.png" alt="World Walker Logo">
-        </a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="aboutme.html">About Me</a>
+            <a id="logo" href="index.html" id="logo_link">
+                <img class="logo" src="images/noback.png" alt="World Walker Logo">
+            </a>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
         <div class="head">
             <h1>My Work</h1>
-            <p>I have taken pictures at many locations across the United States. In the state of New York, I have photographed New York City and Niagara Falls. I also have taken plenty of pictures on the beaches of Virginia. I have taken pictures in Florida, the sunshine state, including beaches and grand resorts. I have captured many of the spectacular hills of West Virginia. Finally, I have taken photographs of several places in Utah, where I served a mission for the Church of Jesus Christ of Latter-Day Saints. These locations include, Provo, Price, Heber City, and Vernal. I have future plans to travel to even more locations around the world to continue to capture our magnificent earth.<br>With all that out of the way, enjoy the wonderful pictures of earth's beauty.</p>
+            <p>I have taken pictures at many locations across the United States. In the state of New York, I have photographed New York City and Niagara Falls. I also have taken plenty of pictures on the beaches of Virginia. I have taken pictures in Florida, the sunshine state, including beaches and grand resorts. I have captured many of the spectacular hills of West Virginia. Finally, I have taken photographs of several places in Utah, where I served a mission for the Church of Jesus Christ of Latter-Day Saints. These locations include, Provo, Price, Heber City, and Vernal. I have future plans to travel to even more locations around the world to continue to capture our magnificent earth.<br><br>With all that out of the way, enjoy the wonderful pictures of earth's beauty.</p>
+        </div>
+    </header>
+    <main class="port">
+        <div class="descr">
+            <div id="wvd" class="tabcontent"><p>Pictures of my wild and wonderful home state. Country roads, take me home.</p></div>
+            <div id="nyd" class="tabcontent"><p>Here's some pictures of stunning city skylines and rushing waterfalls of New York.</p></div>
+            <div id="utd" class="tabcontent"><p>Take a look at some dry deserts and enormous mountains.</p></div>
+            <div id="bed" class="tabcontent"><p>Feast your eyes on the sunny beaches of Virginia and Florida.</p></div>
+            <div id="miscd" class="tabcontent"><p>Enjoy more various images I have taken.</p></div>
         </div>
         <div class="cats">
-            <button onclick="wv()">West Virginia</button>
-            <button onclick="ny()">New York</button>
-            <button onclick="ut()">Utah</button>
-            <button onclick="be()">Beaches</button>
-            <button onclick="misc()">Miscellaneous</button>
+            <h1>Loctions</h1>
+            <button class="tablinks" onclick="openPort(event, 'wv')">West Virginia</button>
+            <button class="tablinks" onclick="openPort(event, 'ny')">New York</button>
+            <button class="tablinks" onclick="openPort(event, 'ut')">Utah</button>
+            <button class="tablinks" onclick="openPort(event, 'be')">Beaches</button>
+            <button class="tablinks" onclick="openPort(event, 'misc')">Miscellaneous</button>
         </div>
         <section id="pics">
-            <div id="wv">
-                <p>Pictures of my wild and wonderful home state. Country roads, take me home.</p>
+            <div id="wv" class="tabcontent">
                 <img src="images/w1.jpg">
                 <img src="images/w2.jpg">
                 <img src="images/w3.jpg">
@@ -83,8 +79,7 @@
                 <img src="images/w8.jpg">
                 <img src="images/w9.jpg">
             </div>
-            <div id="ny">
-                <p>Here's some pictures of stunning city skylines and rushing waterfalls of New York.</p>
+            <div id="ny" class="tabcontent">
                 <img src="images/n1.jpg">
                 <img src="images/n2.jpg">
                 <img src="images/n3.jpg">
@@ -95,8 +90,7 @@
                 <img src="images/n8.jpg">
                 <img src="images/n9.jpg">
             </div>
-            <div id="ut">
-                <p>Take a look at some dry deserts and enormous mountains.</p>
+            <div id="ut" class="tabcontent">
                 <img src="images/u1.jpg">
                 <img src="images/u2.jpg">
                 <img src="images/u3.jpg">
@@ -107,8 +101,7 @@
                 <img src="images/u8.jpg">
                 <img src="images/u9.jpg">
             </div>
-            <div id="be">
-                <p>Feast your eyes on the sunny beaches of Virginia and Florida.</p>
+            <div id="be" class="tabcontent">
                 <img src="images/b1.jpg">
                 <img src="images/b2.jpg">
                 <img src="images/b3.jpg">
@@ -119,8 +112,7 @@
                 <img src="images/b8.jpg">
                 <img src="images/b9.jpg">
             </div>
-            <div id="misc">
-                <p>Enjoy more various images I have taken.</p>
+            <div id="misc" class="tabcontent">
                 <img src="images/m1.jpg">
                 <img src="images/m2.jpg">
                 <img src="images/m3.jpg">
