@@ -138,7 +138,7 @@ button {
 button:hover {
     color: #302f4e;
 }
-button:focus {
+button.active {
     color: #302f4e;
 }
 .port {
