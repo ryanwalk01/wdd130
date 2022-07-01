@@ -211,6 +211,3 @@ button.active {
 .ab img {
     width: 80%;
 }
-#about {
-    grid-template-columns: 1/3;
-}
